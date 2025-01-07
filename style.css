@@ -1,0 +1,301 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+}
+.main{
+    background-image:url("assets/bg.jpeg");
+    height:100vh;
+    background-position: center center;
+    position: relative;
+}
+.main .blackbox{
+    height:100vh;
+    width:100%;
+    background-color: black;
+    position: absolute;
+    top:0px;
+    color:red;
+    font-size: 43px;
+    opacity: 0.66;
+}
+nav{
+    width:80vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 10px;
+}
+nav img{
+    height:8vh;
+    width:10vw;
+    z-index: 20;
+}
+.eng{
+    background: transparent;
+    color:white;
+    height:4vh;
+    width:6vw;
+    border:2px solid white;
+    cursor:pointer;
+}
+.signin{
+    background-color: red;
+    color:white;
+    font-family: 400;
+    border-radius: 4px;
+    width:5vw;
+    padding: 8px;
+    border:2px;
+    margin-left:10px;
+    cursor:pointer;
+}
+.capt{
+    height:80%;
+    width:100%;
+    color:white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 32px;
+    align-items: center ;
+
+}
+.capt .bold{
+    font-weight:900;
+    font-size:52px;
+    font-family: 'arial', Times, serif;
+}
+.capt .small{
+    font-size:18px;
+    font-weight: 500;
+    font-family: 'arial';
+}
+.capt .med{
+    font-size: 16px;
+    font-family: 'arial';
+    font-weight: 300;
+    margin-top: 30px;
+}
+.emailadd{
+    margin: 20px;
+}
+.emailadd input{
+    height:5vh;
+    background:transparent;
+    border:1px solid white;
+    padding:10px;
+    width:25vw;
+    color:white;
+}
+.emailadd input::placeholder{
+    color:white;
+}
+.emailadd button{
+    padding:2vh 2vw;
+    background-color: red;
+    color: white;
+    font-weight: 400;
+    font-size: 24px;
+    border:1px solid black;
+    border-radius:5px; 
+    cursor:pointer;
+}
+.emailadd button:hover{
+    background-color: rgba(255, 0, 0, 0.614);
+}
+.sep-div{
+    height: 5px;
+    box-shadow: 8px 2px 5px blue;
+    background-color: red;
+}
+main{
+    height:70vh;
+}
+.trndg{
+    height:10vh;
+    display:flex;
+    margin-left: 130px;
+    margin-top:50px;
+    font-family: "arial";
+    gap:20px;
+    font-size:24px;
+    flex-direction: column;
+    width:15vw;
+    color:white
+}
+.opt{
+    height:30px;
+    width:200px;
+}
+.trndg-optns{
+    background: transparent;
+    color:white;
+    padding: 5px 8px;
+    border:1px solid white;
+}
+.optns{
+    margin-left: 10px;
+}
+.mv-list{
+    display: flex;
+    height:300px;
+    align-items: center;
+    width:90%;
+    margin:30px;
+    gap:40px;
+}
+.mv{
+    height:250px;
+    width:180px;
+    border-radius:10px;
+    margin-top:10px;
+}
+.fir{
+    margin-left:100px;
+}
+.mv img{
+    height: 250px;
+    width:180px;
+    border-radius:10px;
+}
+.mv span{
+    font-size:100px;
+    color:red;
+    position: relative;
+    display: inline-block;
+    top:-120px;
+    left:-25px;
+    font-family: "arial";
+    font-weight: 700;
+    text-shadow:2px 2px 2px white;
+}
+.crds{
+    height:50vh;
+    /* background-color: bisque; */
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    justify-content: center;
+}
+.crds .hdg{
+    color:white;
+    margin-left: 120px;
+    font-family: "arial";
+    font-weight: 500;
+    font-size: 18px;
+}
+.hold{
+    display: flex;
+    gap:20px;
+}
+.crd{
+    height:185px;
+    width:215px;
+    border-radius: 20px;
+    position: relative;
+    padding:10px;
+    background:linear-gradient(90deg, #0f0c29 0%,  #24243e 100%);
+    color:white;
+}
+.crdfir{
+    margin-left: 120px;
+}
+.crd p{
+    font-weight:400;
+    font-family:"arial";
+    font-size: 20px;
+}
+.crd span{
+    font-weight:normal;
+    font-size:12px;
+    font-family: "arial";
+}
+.faqs{
+    height:60vh;
+    /* background-color:red; */
+}
+.que{
+    height:50px;
+    width:78vw;
+    margin:8px auto;
+    background-color: rgb(53, 53, 53);
+    border-radius: 20px;
+    display:flex;
+    align-items: center;
+    padding:10px;
+    font-size: 22px;
+    color:white;
+    justify-content: space-between;
+}
+.faqs span{
+    color:white;
+    font-family:"arial";
+    margin-left:120px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-family: 400;
+}
+.btnstr{
+    width:15vw;
+    height: 8vh;
+    margin: 0 auto;
+}
+.gtstrt{
+    width: 10vw ;
+    height:6vh;
+    border:2px solid black;
+    border-radius: 20px;
+    background-color: red;
+    color:white;
+    text-align: center;
+}
+footer{
+    display:flex;
+    flex-direction: column;
+    gap:40px;
+    justify-content: 00;
+    color:rgb(156, 156, 156);
+    height:45vh;
+}
+footer span{
+    margin-left:130px;
+    font-size: 20px;
+    font-weight: 500;
+}
+footer span a{
+    color:rgb(156, 156, 156);
+}
+.linkgrid{
+    margin-left:130px;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap:20px;
+}
+.links a{
+    color:rgb(156, 156, 156);
+}
+.eng-btn{
+    height:5vh;
+    width:8vw;
+    margin-left:130px;
+}
+.eng-btn button{
+    height:5vh;
+    width:8vw;
+    background:transparent;
+    border:1px solid white;
+    border-radius:20px;
+    color:rgb(156, 156, 156);
+    cursor:pointer;
+}
+.lbl{
+    color:rgb(156, 156, 156);
+    margin-left:130px;
+}
