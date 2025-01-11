@@ -5,13 +5,13 @@
 body{
     background-color: black;
 }
-.main{
+.face{
     background-image:url("bg.jpeg");
     height:100vh;
     background-position: center center;
     position: relative;
 }
-.main .blackbox{
+header .blackbox{
     height:100vh;
     width:100%;
     background-color: black;
@@ -25,14 +25,15 @@ nav{
     width:80vw;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
     align-items: center;
     position: relative;
-    padding: 10px;
+    /* background-color: blanchedalmond; */
+    padding: 2%;
 }
 nav img{
-    height:8vh;
-    width:10vw;
+    height:15%;
+    width:12%;
     z-index: 20;
 }
 .eng{
@@ -40,7 +41,7 @@ nav img{
     color:white;
     height:4vh;
     width:6vw;
-    border:2px solid white;
+    outline:2px solid white;
     cursor:pointer;
 }
 .signin{
@@ -53,6 +54,35 @@ nav img{
     border:2px;
     margin-left:10px;
     cursor:pointer;
+}
+
+@media only screen and (max-width:600px){
+    nav{
+        justify-content:space-between;
+        /* background-color: blue; */
+        align-content: center;
+        width: 95%;
+        /* padding-top: 5%; */
+        padding: 5% 2%;
+        
+    }
+    nav img{
+        height:25%;
+        width:25%;
+    }
+    .eng{
+        /* height:20%; */
+        width:10vw;
+    }
+    .signin{
+        width:10vw;
+        /* height:20%;  */
+    }
+    .btns{
+        display: inline;
+        width: 25%;
+        /* background-color: rosybrown; */
+    }
 }
 .capt{
     height:80%;
@@ -89,10 +119,12 @@ nav img{
 .emailadd input{
     height:5vh;
     background:transparent;
-    border:1px solid white;
+    border:2px solid #242442;
     padding:10px;
     width:25vw;
     color:white;
+    background-color: transparent;
+    opacity: 0.9;
 }
 .emailadd input::placeholder{
     color:white;
@@ -110,6 +142,28 @@ nav img{
 .emailadd button:hover{
     background-color: rgba(255, 0, 0, 0.614);
 }
+@media only screen and (max-width:600px){
+    .capt .bold{
+        font-size: 34px;
+    }
+    .capt .small{
+        font-size:14px;
+    }
+    .capt .med{
+        font-size: 18px;
+    }
+     .emailadd {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap:20px;
+    }
+    .emailadd input{
+        width: 40vw;
+    }
+    
+}
 .sep-div{
     height: 5px;
     box-shadow: 8px 2px 5px blue;
@@ -121,11 +175,12 @@ main{
 .trndg{
     height:10vh;
     display:flex;
-    margin-left: 130px;
+    /* width:100%; */
+    padding: 15px;
     margin-top:50px;
     font-family: "arial";
     gap:20px;
-    font-size:24px;
+    font-size:20px;
     flex-direction: column;
     width:15vw;
     color:white
@@ -138,18 +193,38 @@ main{
     background: transparent;
     color:white;
     padding: 5px 8px;
+    background-color: transparent;
     border:1px solid white;
 }
 .optns{
     margin-left: 10px;
 }
+@media only screen and(max-width:600px){
+    .trndg{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .opt{
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        gap:10px;
+        width: 100%;
+    }
+    .trndg-optns{
+        padding: 5px 5px;
+    }
+}
 .mv-list{
     display: flex;
-    height:300px;
+    height:50vh;
     align-items: center;
-    width:90%;
-    margin:30px;
+    padding:10px;
     gap:40px;
+    /* padding:20px; */
+    overflow-x: auto;
+    overflow-y: hidden;
 }
 .mv{
     height:250px;
@@ -158,7 +233,7 @@ main{
     margin-top:10px;
 }
 .fir{
-    margin-left:100px;
+    margin-left: 40px;
 }
 .mv img{
     height: 250px;
@@ -167,14 +242,14 @@ main{
 }
 .mv span{
     font-size:100px;
-    color:red;
+    color:black;
     position: relative;
     display: inline-block;
     top:-120px;
     left:-25px;
     font-family: "arial";
     font-weight: 700;
-    text-shadow:2px 2px 2px white;
+    -webkit-text-stroke: 2px white;
 }
 .crds{
     height:50vh;
@@ -192,29 +267,30 @@ main{
     font-size: 18px;
 }
 .hold{
-    display: flex;
-    gap:20px;
+    display: grid;
+    gap:5px;
+    padding:20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
 }
 .crd{
-    height:185px;
-    width:215px;
+    height:30vh;
+    width:20vw;
     border-radius: 20px;
     position: relative;
     padding:10px;
     background:linear-gradient(90deg, #0f0c29 0%,  #24243e 100%);
     color:white;
 }
-.crdfir{
-    margin-left: 120px;
-}
+
 .crd p{
     font-weight:400;
     font-family:"arial";
-    font-size: 20px;
+    font-size: 1.8rem;
 }
 .crd span{
     font-weight:normal;
-    font-size:12px;
+    font-size:0.9em;
     font-family: "arial";
 }
 .faqs{
@@ -226,7 +302,7 @@ main{
     width:78vw;
     margin:8px auto;
     background-color: rgb(53, 53, 53);
-    border-radius: 20px;
+    border-radius: 2px;
     display:flex;
     align-items: center;
     padding:10px;
