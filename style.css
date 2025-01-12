@@ -66,9 +66,6 @@ nav img{
         padding: 5% 2%;
         
     }
-    .face{
-        background-image:linear-gradient(green, blue); ;
-    }
     nav img{
         height:25%;
         width:25%;
@@ -183,19 +180,21 @@ main{
 .trndg{
     height:10vh;
     display:flex;
-    /* width:100%; */
+    /* width:0vw;  */
     padding: 15px;
     margin-top:50px;
     font-family: "arial";
     gap:20px;
     font-size:20px;
     flex-direction: column;
-    width:15vw;
+    /* background-color: blue; */
+    width:18vw;
     color:white
 }
 .opt{
-    height:30px;
-    width:200px;
+    height:10vh;
+    /* background-color: red; */
+    width:70vw;
 }
 .trndg-optns{
     background: transparent;
@@ -205,40 +204,36 @@ main{
     border:1px solid white;
 }
 .optns{
-    margin-left: 10px;
+    margin-left: 20px;
 }
 @media only screen and(max-width:600px){
     .trndg{
         width: 90%;
         margin: 0 auto;
+        background-color: royalblue;
     }
     .opt{
-        display: flex;
-        flex-direction:column;
-        justify-content: center;
-        align-items: center;
-        gap:10px;
-        width: 100%;
-    }
-    .trndg-optns{
-        padding: 5px 5px;
+        background-color: red;
     }
 }
 .mv-list{
     display: flex;
     height:50vh;
     align-items: center;
-    padding:10px;
+    /* padding:10px; */
     gap:40px;
     /* padding:20px; */
-    overflow-x: auto;
+    overflow-x:auto;
     overflow-y: hidden;
+}
+.mv-list::-webkit-scrollbar{
+    display:none;
 }
 .mv{
     height:250px;
     width:180px;
     border-radius:10px;
-    margin-top:10px;
+    /* margin-top:10px; */
 }
 .fir{
     margin-left: 40px;
