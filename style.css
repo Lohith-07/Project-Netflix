@@ -66,6 +66,9 @@ nav img{
         padding: 5% 2%;
         
     }
+    .face{
+        background-image:linear-gradient(green, blue); ;
+    }
     nav img{
         height:25%;
         width:25%;
